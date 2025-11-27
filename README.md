@@ -46,32 +46,7 @@ docker run --rm -v "${PWD}:/data" ghcr.io/day0x0f/keyword-extractor:latest *.md
 
 # Salvar output em um arquivo
 docker run --rm -v "${PWD}:/data" ghcr.io/day0x0f/keyword-extractor:latest documento.md > keywords.txt
-Exemplo de Output
-text
-Arquivo: exemplo.md
-Keywords extraídas:
-1. processamento linguagem natural (score: 0.95)
-2. extração keywords (score: 0.87)
-3. análise textual (score: 0.82)
-4. machine learning (score: 0.78)
-5. python (score: 0.75)
-🔧 Desenvolvimento
-Estrutura do Projeto
-text
-keyword-extractor/
-├── Dockerfile
-├── .github/
-│   └── workflows/
-│       └── docker.yml
-├── src/
-│   ├── main.py
-│   ├── extractor.py
-│   └── utils/
-├── requirements.txt
-├── examples/
-└── README.md
-Build Local
-bash
+
 # Build da imagem Docker
 docker build -t keyword-extractor .
 
@@ -99,15 +74,7 @@ Status do Workflow
 https://github.com/day0x0f/keyword-extractor/actions/workflows/docker.yml/badge.svg
 
 Tags Disponíveis
-latest - Última versão estável
-
-sha-<commit-hash> - Builds específicos por commit
-
-vX.X.X - Versões semânticas
-
-🐛 Troubleshooting
-Problemas Comuns
-Imagem não encontrada:
+v1.0.0 - Última versão estável
 
 bash
 # Verificar tags disponíveis
@@ -128,31 +95,6 @@ ls -la
 
 # Usar caminho absoluto
 docker run --rm -v "/caminho/completo:/data" ghcr.io/day0x0f/keyword-extractor:latest documento.md
-🤝 Contribuição
-Fork o projeto
-
-Crie uma branch para sua feature (git checkout -b feature/AmazingFeature)
-
-Commit suas mudanças (git commit -m 'Add some AmazingFeature')
-
-Push para a branch (git push origin feature/AmazingFeature)
-
-Abra um Pull Request
-
-Convenções de Commit
-feat: Novas funcionalidades
-
-fix: Correções de bugs
-
-docs: Documentação
-
-style: Formatação, missing semi colons, etc.
-
-refactor: Refatoração de código
-
-test: Adicionando testes
-
-chore: Manutenção do build
 
 
 👥 Autores
