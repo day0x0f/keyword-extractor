@@ -10,6 +10,8 @@ import (
 	"text-stats/handlers"
 )
 
+// FileExists verifica se um arquivo existe no sistema de arquivos.
+// Retorna true caso o arquivo exista, ou false se não existir.
 func FileExists(filename string) bool {
 	_, err := os.Stat(filename)
 	return !os.IsNotExist(err)
