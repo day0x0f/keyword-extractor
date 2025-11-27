@@ -10,6 +10,8 @@ import (
 )
 
 func main() {
+
+	// Verifica se foi passado algum argumento
 	if len(os.Args) < 2 {
 		fmt.Println("Uso: text-stats <arquivo>")
 		return
@@ -17,6 +19,7 @@ func main() {
 
 	filePath := os.Args[1]
 
+	// Verifica se foi encontrado algum erro
 	if !utils.FileExists(filePath) {
 		log.Fatalf("Arquivo não encontrado: %s", filePath)
 	}
@@ -45,6 +48,6 @@ func main() {
 	if err := utils.SaveStatsToFile(stats, outputFile); err != nil {
 		log.Printf("Não foi salvar relatório: %v", err)
 	} else {
-		fmt.Printf("💾 Relatório salvo: %s\n", outputFile)
+		fmt.Printf("💾 Relatório salvo com sucesso: %s\n", outputFile)
 	}
 }
