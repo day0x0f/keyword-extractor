@@ -45,6 +45,6 @@ func main() {
 	if err := utils.SaveStatsToFile(stats, outputFile); err != nil {
 		log.Printf("Não foi salvar relatório: %v", err)
 	} else {
-		fmt.Printf("💾 Relatório salvo: %s\n", outputFile)
+		fmt.Printf("💾 Relatório salvo com sucesso: %s\n", outputFile)
 	}
 }

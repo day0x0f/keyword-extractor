@@ -10,6 +10,8 @@ import (
 	"golang.org/x/text/unicode/norm"
 )
 
+
+
 type TextStats struct {
 	Filename         string
 	FileSize         int64
