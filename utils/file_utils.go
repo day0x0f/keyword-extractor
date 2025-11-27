@@ -17,6 +17,8 @@ func FileExists(filename string) bool {
 	return !os.IsNotExist(err)
 }
 
+// GenerateOutputFilename gera automaticamente o nome do arquivo de saída.
+// O nome é baseado no arquivo de entrada + um timestamp para evitar sobrescrições.
 func GenerateOutputFilename(inputPath string) string {
 	base := filepath.Base(inputPath)
 	name := strings.TrimSuffix(base, filepath.Ext(base))
@@ -24,6 +26,9 @@ func GenerateOutputFilename(inputPath string) string {
 	return fmt.Sprintf("%s_stats_%s.txt", name, timestamp)
 }
 
+// SaveStatsToFile recebe as estatísticas de texto e salva tudo em um arquivo.
+// Cria o arquivo de relatório com informações formatadas, incluindo dados sobre
+// tamanho, contagem de palavras, linhas, caracteres e detalhes de Markdown.
 func SaveStatsToFile(stats *handlers.TextStats, filename string) error {
 	file, err := os.Create(filename)
 	if err != nil {
