@@ -1,0 +1,24 @@
+# Binários
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Arquivos de teste
+*.test
+
+# Arquivos de saída
+/output/
+/tmp/
+
+# Diretórios
+/bin/
+/tmp/
+
+# IDE
+.vscode/
+.idea/
+
+# Go
+go.sum
+EOF

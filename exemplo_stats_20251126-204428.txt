@@ -1,0 +1,19 @@
+RELATÓRIO DE ESTATÍSTICAS DE TEXTO
+===============================
+
+Arquivo: exemplo.md
+Data: 26/11/2025 20:44:28
+
+ESTATÍSTICAS:
+------------
+Tamanho do arquivo: 224 bytes
+Número de linhas: 10
+Número de palavras: 28
+Número de caracteres: 224
+Palavra mais longa: 17 caracteres
+
+Arquivo Markdown: Sim
+Elementos Markdown: 1
+
+---
+Gerado por Text Stats
