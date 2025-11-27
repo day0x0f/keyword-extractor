@@ -1,0 +1,10 @@
+# .dockerignore
+.git
+.gitignore
+README.md
+Dockerfile
+.dockerignore
+*_stats_*.txt
+examples/
+tmp/
+bin/
