@@ -37,7 +37,7 @@ func main() {
 	fmt.Printf("📏 Palavra mais longa: %d caracteres\n", stats.LongestWord)
 
 	if stats.IsMarkdown {
-		fmt.Printf("📋 Markdown: Sim (%d elementos)\n", stats.MarkdownElements)
+		fmt.Printf("🗃️ Markdown: Sim (%d elementos)\n", stats.MarkdownElements)
 	}
 
 	// Salva relatório
