@@ -80,6 +80,7 @@ func analyzeMarkdown(stats *TextStats, text string) {
 	stats.MarkdownElements = strings.Count(string(sanitized), "<") / 2
 }
 
+// Verifica se o arquivo é markdown
 func isMarkdownFile(filename string) bool {
 	return strings.HasSuffix(strings.ToLower(filename), ".md") ||
 		strings.HasSuffix(strings.ToLower(filename), ".markdown")
