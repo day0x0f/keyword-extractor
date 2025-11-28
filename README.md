@@ -9,26 +9,20 @@ Pipeline CI/CD automatizado com GitHub Actions
 
 📦 Instalação
 Usando Docker (Recomendado)
-bash
+
 # Puxar a imagem mais recente
 docker pull ghcr.io/day0x0f/keyword-extractor:latest
 
 # Executar em um arquivo
 docker run --rm -v "${PWD}:/data" ghcr.io/day0x0f/keyword-extractor:latest arquivo.md
-Instalação Manual
-bash
+
 # Clonar o repositório
 git clone https://github.com/day0x0f/keyword-extractor.git
 cd keyword-extractor
 
-# Instalar dependências
-pip install -r requirements.txt
-
-# Executar
-python main.py arquivo.md
 🛠️ Uso
 Comando Básico
-bash
+
 # Processar um único arquivo
 docker run --rm -v "${PWD}:/data" ghcr.io/day0x0f/keyword-extractor:latest documento.md
 
@@ -44,12 +38,10 @@ docker build -t keyword-extractor .
 # Executar localmente
 docker run --rm -v "${PWD}:/data" keyword-extractor exemplo.md
 Testes
-bash
-# Executar testes unitários
-python -m pytest tests/
 
 # Testar com arquivo de exemplo
 docker run --rm -v "${PWD}:/data" keyword-extractor examples/sample.md
+
 📋 CI/CD Pipeline
 O projeto utiliza GitHub Actions para automatizar:
 
@@ -61,8 +53,6 @@ O projeto utiliza GitHub Actions para automatizar:
 
 ✅ Testes automatizados em cada pull request
 
-Status do Workflow
-https://github.com/day0x0f/keyword-extractor/actions/workflows/docker.yml/badge.svg
 
 Tags Disponíveis
 v1.0.0 - Primeira versão
