@@ -1,19 +1,10 @@
-Keyword Extractor
-https://img.shields.io/badge/version-1.0.0-blue
-https://img.shields.io/badge/docker-ready-green
-https://img.shields.io/badge/CI/CD-enabled-success
-
 Um extractor de keywords automatizado que processa documentos de texto e identifica as palavras-chave mais relevantes usando técnicas de processamento de linguagem natural.
 
 🚀 Funcionalidades
 Extração automática de keywords de documentos de texto
-
 Suporte a múltiplos formatos (markdown, txt, etc.)
-
 Processamento em lote de múltiplos arquivos
-
 Containerização Docker para fácil deploy
-
 Pipeline CI/CD automatizado com GitHub Actions
 
 📦 Instalação
@@ -74,15 +65,11 @@ Status do Workflow
 https://github.com/day0x0f/keyword-extractor/actions/workflows/docker.yml/badge.svg
 
 Tags Disponíveis
-v1.0.0 - Última versão estável
+v1.0.0 - Primeira versão
 
 bash
 # Verificar tags disponíveis
 curl -s https://ghcr.io/v2/day0x0f/keyword-extractor/tags/list
-
-# Usar tag específica
-docker run --rm -v "${PWD}:/data" ghcr.io/day0x0f/keyword-extractor:sha-243a861 arquivo.md
-Permissão negada:
 
 bash
 # Dar permissão de execução no host
@@ -99,7 +86,6 @@ docker run --rm -v "/caminho/completo:/data" ghcr.io/day0x0f/keyword-extractor:l
 
 👥 Autores
 Dayvid Dias - day0x0f
-
 Fernando Franca Filho - FernandofrancaFilho
 
 
